@@ -11,5 +11,6 @@ if not validate_args(argv):
 csv_path = argv[1]
 html_path = argv[2]
 img_path = argv[3]
+naming_pattern = argv[4]
 
-process(csv_path, html_path, img_path)
+process(csv_path, html_path, img_path, naming_pattern)

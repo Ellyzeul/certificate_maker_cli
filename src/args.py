@@ -12,6 +12,7 @@ def display_help():
     - Caminho para o arquivo CSV com os dados a ser lido
     - Caminho para o template HTML a ser preenchido
     - Caminho para a imagem a ser usada de plano de fundo
+    - Padrão de nome dos arquivos gerados (ex.: "DATE - NAME")
 
         """
     )
@@ -20,7 +21,7 @@ def display_invalid_path(path):
     print("O caminho: %s é inválido\n" % path)
 
 def validate_args(argv):
-    if len(argv) != 4:
+    if len(argv) != 5:
         display_help()
         return False
 
